@@ -8,6 +8,8 @@ namespace API.Controllers
 {
     [ApiController]
     [Route("[controller]")]
+    //Swagger игнорирует данный контроллер в документации
+    [ApiExplorerSettings(IgnoreApi = true)]
     public class WeatherForecastController : ControllerBase
     {
         private static readonly string[] Summaries = new[]
